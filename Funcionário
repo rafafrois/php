@@ -1,0 +1,114 @@
+<?php
+class Funcionario {
+
+private $matricula;
+private $nome;
+private $cpf;
+private $funcao;
+private $idade;
+private $dataContratacao;
+private $dataDemissao;
+private $ultimaRemuneracao;
+private $tempoDeCasa;
+
+
+public function getMatricula(){
+return $this->matricula;
+}
+
+public function setMatricula($matricula){
+$this->matricula = $matricula;
+}
+
+public function getNome(){
+return $this->nome;
+
+}
+
+public function setNome($nome){
+$this->nome = $nome;
+}
+
+public function getCpf(){
+return $this->cpf;
+}
+
+public function setCpf($cpf){
+$this->cpf = $cpf;
+}
+
+public function getFuncao(){
+return $this->funcao;
+}
+
+public function setFuncao($funcao){
+$this->funcao = $funcao;
+}
+
+public function getIdade(){
+return $this->idade;
+}
+
+public function setIdade($idade){
+$this->idade = $idade;
+}
+
+public function getDataContratacao(){
+return $this->dataContratacao;
+}
+
+public function setDataContratacao($dataContratacao){
+$this->dataContratacao = $dataContratacao;
+}
+
+public function getDataDemissao(){
+return $this->dataDemissao;
+}
+
+public function setDataDemissao($dataDemissao){
+$this->dataDemissao = $dataDemissao;
+}
+
+public function getUltimaRemuneracao(){
+return $this->ultimaRemuneracao;
+}
+
+public function setUltimaRemuneracao($ultimaRemuneracao){
+$this->ultimaRemuneracao = $ultimaRemuneracao;
+}
+
+public function getTempoDeCasa(){
+return $this->tempoDeCasa;
+}
+
+public function setTempoDeCasa($tempoDeCasa){
+$this->tempoDeCasa = $tempoDeCasa;
+
+}
+
+}
+
+
+$funcionario = new Funcionario();
+
+$funcionario->setMatricula("3084");
+$funcionario->setNome("Frois");
+$funcionario->setCpf("47352410864");
+$funcionario->setFuncao("Desenvolvedor");
+$funcionario->setIdade(17);
+$funcionario->setDataContratacao("12/07/2023");
+$funcionario->setDataDemissao("24/03/2028");
+$funcionario->setUltimaRemuneracao(3317.70);
+$funcionario->setTempoDeCasa(27);
+
+echo "Matrícula: " . $funcionario->getMatricula() . "\n";
+echo "Nome: " . $funcionario->getNome() . "\n";
+echo "Cpf: " . $funcionario->getCpf() . "\n";
+echo "Função: " . $funcionario->getFuncao() . "\n";
+echo "Idade: " . $funcionario->getIdade() . "\n";
+echo "Data de Contratação: " . $funcionario->getDataContratacao() . "\n";
+echo "Data de Demissão: " . $funcionario->getDataDemissao() . "\n";
+echo "Última Remuneração: " . $funcionario->getUltimaRemuneracao() . "\n";
+echo "Tempo de Casa: " . $funcionario->getTempoDeCasa() . "\n";
+
+?>
